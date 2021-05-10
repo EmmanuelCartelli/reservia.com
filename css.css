@@ -81,7 +81,7 @@ header a:hover, header a:active{
 }
 
 .searchfield{
-    width: 14rem;
+    width: 14vw;
     border: none;
     padding: 0 1.15rem;
 }
@@ -471,7 +471,7 @@ a.footerlink:link, a.footerlink:active{
     }
 
     .searchfield{
-        width: auto;
+        width: 14vw;
     }
 
     .grid-container{
