@@ -470,6 +470,10 @@ a.footerlink:link, a.footerlink:active{
         padding: 5vw;
     }
 
+    .searchfield{
+        width: auto;
+    }
+
     .grid-container{
         grid-template-columns: auto;
         grid-template-rows: repeat(6, 40vw);
