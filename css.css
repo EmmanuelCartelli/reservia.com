@@ -3,6 +3,9 @@
     scroll-behavior: smooth;
 }
 
+html{
+    font-size: 100%;
+}
 
 body{
     max-width: 1440px;
@@ -17,23 +20,22 @@ body{
 }
 
 header{
-    display: grid;
-    grid-template-columns: auto 33% auto;
     margin-bottom: 20px;
 }
 
 .logocontainer{
-    grid-column: 1;
     display: flex;
     align-items: center;
-    
 }
 
 .menu{
-    grid-column: 3;
+    display: grid;
+    grid-template-columns: 60% auto auto auto;
+}
+
+.menu>a{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
 }
 
 header a{
@@ -42,11 +44,12 @@ header a{
     font-weight: 500;
     border-top: 2px solid white;
 }
-header a:link, a:visited{
+
+a:link, a:visited{
     text-decoration: none;
     color: black;
 }
-header a:hover, a:active{
+header a:hover, header a:active{
     text-decoration: none;
     border-top: 2px solid #0065FC;
     color:  #0065FC;
@@ -97,8 +100,8 @@ i.fas{
 .filters{
 
     display: flex;
+    flex-wrap: wrap;
     grid-gap: 2vw;
-    height: 50px;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 50px;
@@ -163,7 +166,7 @@ i.fas{
     column-gap: 2rem;
 }
 
-div.box>div.imgcontainer{
+.box>.imgcontainer{
     padding: 6px 6px 0 6px;
 }
 .setimg{
@@ -367,19 +370,19 @@ div.box>div.imgcontainer{
   }
   
   .footer{
-      margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  font-family: "Raleway", "Sans serif";
-  background-color: #f2f2f2;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: "Raleway", "Sans serif";
+    background-color: #f2f2f2;
 }
 
 .columnone, .columntwo, .columnthree{
-  display: flex;
-  flex-direction: column;
-  width: 33%;
-  row-gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    row-gap: 0.75rem;
 }
 
 .footerlink{
@@ -393,5 +396,99 @@ a.footerlink:link, a.footerlink:active{
 
 .false{
     color: #d9d9d9;
+}
+
+.box:hover, .asidebox:hover, .act:hover, .f:hover{
+
+    transform: scale(1.05);
+}
+
+@media (max-width: 1430px){ 
+
+    .flexaside{
+        grid-template-columns: auto;
+    }
+
+    .aside{
+        grid-area: 1;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto;
+        column-gap: 2rem;
+
+    }
+
+    .aside>h2{
+        grid-column: 1/-1;
+    }
+
+    .describox{
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+
+
+
+    .flexaside{
+        row-gap: 2rem;
+    }
+
+    .aside{
+        display: grid;
+        grid-template-rows: auto repeat(3, 1fr);
+        grid-template-columns: auto;
+        padding: 2rem;
+        row-gap: 2rem;
+        background-color: #f2f2f2;
+        border-radius: 1.5rem;
+    }
+
+    .logementm{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: auto;
+    }
+
+    .setimg{
+        height: 30vw;
+    }
+
+    .menu{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .logocontainer{
+        justify-content: center;
+    }
+
+    .login{
+        grid-area: 1/2;
+    }
+
+    header a{
+        padding: 5vw;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 40vw);
+        row-gap: 2rem;
+    }
+
+    .grid-container>*{
+        grid-area: auto;
+    }
+    
+    .footer{
+        flex-direction: column;
+    }
+
+    .columnone, .columntwo, .columnthree{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
