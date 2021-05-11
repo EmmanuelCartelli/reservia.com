@@ -386,11 +386,17 @@ i.fas{
   
 .footer{
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
     padding: 2rem;
     font-family: "Raleway", "Sans serif";
     background-color: #f2f2f2;
+}
+
+.columncontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 100%;
+    width: 1440px;
 }
 
 .columnone, .columntwo, .columnthree{
@@ -511,7 +517,7 @@ a.footerlink:link, a.footerlink:active{
         grid-area: auto;
     }
     
-    .footer{
+    .columncontainer{
         flex-direction: column;
     }
 
