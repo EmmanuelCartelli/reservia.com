@@ -432,12 +432,13 @@ a.footerlink:link, a.footerlink:active{
 
     .flexaside{
         grid-template-columns: auto;
+        row-gap: 2rem;
     }
 
     .aside{
         grid-area: 1;
         grid-template-rows: auto;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
 
     }
@@ -457,6 +458,10 @@ a.footerlink:link, a.footerlink:active{
 
     .flexaside{
         row-gap: 2rem;
+    }
+
+    .filtertitle{
+        width: 100%;
     }
 
     .aside{
