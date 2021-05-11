@@ -147,6 +147,8 @@ i.fas{
 }
 
 .resulticon{
+    min-width: 2rem;
+    min-height: 2rem;
     height: 2rem;
     width: 2rem;
     border: solid 1px #d9d9d9;
@@ -278,6 +280,7 @@ i.fas{
 }
 
 .relativebox{
+    position: relative;
     width: 33%;
     min-width: 33%;
     max-width: 33%;
@@ -285,6 +288,7 @@ i.fas{
 }
 
 .asidesetimg{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -408,7 +412,11 @@ a.footerlink:link, a.footerlink:active{
 
 .box:hover, .asidebox:hover, .act:hover, .f:hover{
 
-    transform: scale(1.05);
+    transform: scale(1.04);
+}
+
+.box, .asidebox, .act, .f{
+    transition-duration: 500ms;
 }
 
 @media (max-width: 1430px){ 
