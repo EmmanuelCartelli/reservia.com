@@ -80,6 +80,10 @@ header a:hover, header a:active{
     cursor: pointer;
 }
 
+.fa-search{
+    display: none;
+}
+
 .searchfield{
     width: 14vw;
     border: none;
@@ -95,6 +99,10 @@ header a:hover, header a:active{
 i.fas{
     display: flex;
     align-items: center;
+}
+
+.searchbutton > i{
+    display: none;
 }
 
 .filters{
@@ -471,7 +479,15 @@ a.footerlink:link, a.footerlink:active{
     }
 
     .searchfield{
-        width: 14vw;
+        width: 14rem;
+    }
+
+    i.fa-search{
+        display: flex;
+    }
+
+    .switch{
+        display: none;
     }
 
     .grid-container{
